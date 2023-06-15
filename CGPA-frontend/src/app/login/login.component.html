@@ -1,0 +1,88 @@
+<div
+  class="relative h-[1024px] w-[100%] overflow-hidden overflow-y-scroll bg-[#EEEFF4]"
+>
+  <div
+    class="absolute left-[calc(50%-525px/2-0.5px)] top-[calc(50%-656px/2)] box-border flex h-[620px] w-[525px] flex-col items-center gap-10 rounded-2xl bg-white p-[40px] drop-shadow-form-shadow"
+  >
+    <div
+      class="order-[0] flex h-[156px] w-[445px] flex-none flex-grow-0 flex-col items-center gap-4 p-0"
+    >
+      <img class="h-[46px]" src="../../assets/images/logo.svg" alt="logo" />
+      <div
+        class="order-1 flex h-[94px] w-[445px] flex-none flex-grow-0 flex-col items-center gap-2 p-0"
+      >
+        <p
+          class="order-[0] mt-4 h-10 flex-none flex-grow-0 font-kanit text-3xl font-medium leading-8 text-[#1D2939]"
+        >
+          Welcome to CGPA Calculator
+        </p>
+        <p
+          class="order-1 w-[445px] flex-none flex-grow-0 px-8 text-center font-inter text-base text-[#475467]"
+        >
+          Sign in to Calculate your academic standing and monitor your academic
+          journey
+        </p>
+      </div>
+    </div>
+    <form
+      [formGroup]="loginForm"
+      class="order-1 flex h-[248px] w-[435px] flex-none flex-grow-0 flex-col items-center gap-10 p-0"
+    >
+      <div
+        class="form-group order-[0] flex h-[164px] w-[435px] flex-none flex-grow-0 flex-col items-start gap-6 p-0"
+      >
+        <div class="form-group input-group order-[0]">
+          <div class="input-group-inner">
+            <label for="email" class="input-label">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control form-input"
+              formControlName="email"
+              placeholder="CGPACalculator@email.com"
+            />
+          </div>
+        </div>
+        <div class="form-group input-group order-1">
+          <div class="input-group-inner">
+            <label for="password" class="input-label">Password</label>
+            <input
+              type="password"
+              id="password"
+              class="form-control form-input"
+              placeholder="******"
+              formControlName="password"
+            />
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="login-btn" (click)="login()">
+        <div class="login-btn-inner">
+          <p
+            class="order-[0] h-6 w-12 flex-none flex-grow-0 font-inter text-base font-semibold leading-6 text-white"
+          >
+            Log In
+          </p>
+        </div>
+      </button>
+    </form>
+    <div
+      class="order-last flex h-[92px] w-[435px] flex-none flex-grow-0 flex-col items-center gap-6 p-0"
+    >
+      <p
+        class="order-0 flex-none flex-grow-0 font-inter text-base font-medium leading-6 text-[#667085]"
+      >
+        Don't have an account ?
+      </p>
+      <div class="register-btn">
+        <a routerLink="/register" class="register-btn-inner">
+          <p
+            class="order-[0] h-6 w-[65px] flex-none flex-grow-0 text-center font-inter text-base font-semibold leading-6 text-[#344054]"
+          >
+            Register
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

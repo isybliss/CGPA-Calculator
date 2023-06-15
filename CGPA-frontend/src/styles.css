@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .form-input {
+    @apply order-1 box-border h-11 w-[435px] flex-none flex-grow-0 self-stretch rounded-lg border border-[#D0D5DD] bg-white px-[14px] py-[10px] drop-shadow-input-shadow;
+  }
+  .input-group {
+    @apply flex h-[70px] w-[435px] flex-none flex-grow-0 flex-col items-start p-0;
+  }
+  .input-group-inner {
+    @apply order-[0] flex h-[70px] w-[435px] flex-none flex-grow-0 flex-col items-start gap-[6px] self-stretch p-0;
+  }
+  .input-label {
+    @apply order-[0] flex-none flex-grow-0 font-inter text-sm font-medium leading-5 text-[#344054];
+  }
+  .login-btn {
+    @apply order-1 flex h-11 w-[435px] flex-none flex-grow-0 flex-row items-start p-0;
+  }
+  .login-btn-inner {
+    @apply order-[0] box-border flex h-11 w-[435px] flex-none flex-grow flex-row items-center justify-center gap-2 rounded-lg border border-[#0052FC] bg-[#0052FC] px-[18px] py-[10px] drop-shadow-input-shadow;
+  }
+  .register-btn {
+    @apply order-1 flex h-11 w-[435px] flex-none flex-grow-0 flex-row items-start rounded-lg p-0;
+  }
+  .register-btn-inner {
+    @apply order-[0] flex h-11 w-[435px] flex-none flex-grow flex-row items-center justify-center gap-2 rounded-lg border border-[#D0D5DD] bg-white px-[18px] py-[10px] drop-shadow-input-shadow;
+  }
+  .invalid-icon {
+    @apply absolute right-[10px] top-1/2 translate-y-1/2;
+  }
+  .invalid-feedback {
+    @apply flex-none flex-grow-0 self-stretch font-inter font-normal leading-4 text-[#F04438];
+  }
+  .session-option {
+    @apply order-[0] flex-none flex-grow-0 font-inter text-base font-medium leading-6 text-[#344054];
+  }
+}

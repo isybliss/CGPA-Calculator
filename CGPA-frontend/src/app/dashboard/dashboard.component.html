@@ -1,0 +1,136 @@
+<div class="relative h-fit min-h-screen w-screen overflow-x-hidden bg-white">
+  <div
+    class="absolute left-0 top-0 flex h-fit min-h-screen w-[359px] flex-col items-start justify-between bg-[#101828] p-6"
+  >
+    <div
+      class="first-sec order-[0] flex h-fit w-[311px] flex-none flex-grow-0 flex-col items-start gap-[88px] p-0"
+    >
+      <div
+        class="order-[0] flex h-8 w-[215px] flex-none flex-grow-0 flex-row items-center gap-2 px-4 py-0"
+      >
+        <img
+          class="order-[0] h-8 w-8 flex-none flex-grow-0"
+          src="../../assets/images/logo.svg"
+          alt="logo"
+        />
+        <p
+          class="order-1 w-[143px] flex-none flex-grow-0 text-center font-inter text-lg font-medium text-[#FCFCFD]"
+        >
+          CGPA Calculator
+        </p>
+      </div>
+      <div
+        class="order-1 flex h-fit w-[311px] flex-none flex-grow-0 flex-col items-start gap-[28px] p-0"
+      >
+        <a
+          class="order-[0] box-border flex h-12 w-[311px] flex-none flex-grow-0 flex-col items-start justify-center gap-2 px-4 py-3 {{
+            overviewIsActive
+              ? 'rounded-lg border border-[#667085] bg-[#1D2939] text-[#FCFCFD]'
+              : 'text-[#98A2B3]'
+          }} transition-colors duration-200 ease-in-out"
+          [routerLink]="['/dashboard/overview']"
+          routerLinkActive="active"
+        >
+          <div
+            class="order-[0] flex h-6 w-[109px] flex-none flex-grow-0 flex-row items-center gap-3 p-0"
+          >
+            <div class="icon-wrapper order-[0] h-6 w-6 flex-none flex-grow-0">
+              <img
+                src="{{
+                  overviewIsActive
+                    ? '../../assets/images/overview-icon.svg'
+                    : '../../assets/images/overview-inactive.svg'
+                }}"
+                alt="overview-icon"
+              />
+            </div>
+            <p
+              class="order-1 h-6 w-[73px] flex-none flex-grow-0 text-center font-inter text-base font-medium leading-6"
+            >
+              Overview
+            </p>
+          </div>
+        </a>
+        <a
+          class="order-1 box-border flex h-12 w-[311px] flex-none flex-grow-0 flex-col items-start justify-center gap-2 px-4 py-2 {{
+            analyticsIsActive
+              ? 'rounded-lg border border-[#667085] bg-[#1D2939] text-[#FCFCFD]'
+              : 'text-[#98A2B3]'
+          }} transition-colors duration-200 ease-in-out"
+          [routerLink]="['/dashboard/analytics']"
+          routerLinkActive="active"
+        >
+          <div
+            class="order-[0] flex h-6 w-[109px] flex-none flex-grow-0 flex-row items-center gap-3 p-0"
+          >
+            <div class="icon-wrapper order-[0] h-6 w-6 flex-none flex-grow-0">
+              <img
+                src="../../assets/images/analytics-icon.svg"
+                alt="Analytics"
+              />
+            </div>
+            <p
+              class="inter order-1 h-6 w-[73px] flex-none flex-grow-0 text-center text-base font-medium leading-6"
+            >
+              Analytics
+            </p>
+          </div>
+        </a>
+        <a
+          class="order-1 box-border flex h-12 w-[311px] flex-none flex-grow-0 flex-col items-start justify-center gap-2 px-4 py-2 {{
+            settingsIsActive
+              ? 'rounded-lg border border-[#667085] bg-[#1D2939] text-[#FCFCFD]'
+              : 'text-[#98A2B3]'
+          }} transition-colors duration-200 ease-in-out"
+          [routerLink]="['/dashboard/settings']"
+          routerLinkActive="active"
+        >
+          <div
+            class="order-[0] flex h-6 w-[109px] flex-none flex-grow-0 flex-row items-center gap-3 p-0"
+          >
+            <div class="icon-wrapper order-[0] h-6 w-6 flex-none flex-grow-0">
+              <img src="../../assets/images/settings-icon.svg" alt="Settings" />
+            </div>
+            <p
+              class="inter leading-6\ order-1 h-6 w-[73px] flex-none flex-grow-0 text-center text-base font-medium"
+            >
+              Settings
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div
+      class="second-sec order-1 box-border flex h-20 w-[311px] flex-none flex-grow-0 flex-row items-center justify-center gap-[42px] rounded-2xl border border-[#667085] bg-[#1D2939] p-4 drop-shadow-account-pill-shadow"
+    >
+      <div
+        class="order-[0] flex h-12 w-[213px] flex-none flex-grow-0 flex-row items-start gap-[10px] p-0"
+      >
+        <fa-icon
+          class="order-[0] h-12 w-12 flex-none flex-grow-0 overflow-hidden rounded-full text-center text-5xl"
+          [icon]="faUser"
+        ></fa-icon>
+        <div
+          class="order-1 flex h-12 w-[155px] flex-none flex-grow-0 flex-col items-start gap-1 p-0"
+        >
+          <p
+            class="order-[0] flex-none flex-grow-0 text-center font-inter text-base font-semibold leading-6 text-[#FCFCFD]"
+          >
+            CGPA Calculator
+          </p>
+          <p
+            class="order-1 flex-none flex-grow-0 text-center font-inter text-sm font-normal leading-5 text-[#D0D5DD]"
+          >
+            CGPACalculator@email.com
+          </p>
+        </div>
+      </div>
+      <img
+        class="order-1 h-6 w-6 flex-none flex-grow-0"
+        src="../../assets/images/arrow-right.svg"
+        alt=">"
+      />
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</div>

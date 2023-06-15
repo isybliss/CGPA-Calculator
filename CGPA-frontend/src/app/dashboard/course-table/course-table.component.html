@@ -1,0 +1,110 @@
+<table
+  class="order-[0] flex w-full flex-none flex-grow-0 border-collapse flex-col border-[0.5px] border-[#D0D5DD]"
+>
+  <tr
+    class="order-[0] box-border flex h-[60px] w-full flex-none flex-grow-0 flex-row items-center p-0"
+  >
+    <th
+      class="flex h-full {{
+        !editMode ? 'w-[7.89%]' : 'w-[6%]'
+      }} items-center justify-center border-[0.5px] border-[#D0D5DD] px-3 py-4"
+    >
+      S/N
+    </th>
+    <th
+      class="flex h-full {{
+        !editMode ? 'w-[22.05%]' : 'w-[18%]'
+      }} items-center justify-center border-[0.5px] border-[#D0D5DD] px-3 py-4"
+    >
+      Course code
+    </th>
+    <th
+      class="flex h-full {{
+        !editMode ? 'w-[27.95%]' : 'w-[23%]'
+      }} items-center justify-center border-[0.5px] border-[#D0D5DD] px-3 py-4"
+    >
+      Course title
+    </th>
+    <th
+      class="flex h-full {{
+        !editMode ? 'w-[22.05%]' : 'w-[18%]'
+      }} items-center justify-center border-[0.5px] border-[#D0D5DD] px-3 py-4"
+    >
+      Course unit
+    </th>
+    <th
+      class="flex h-full {{
+        !editMode ? 'w-[20.87%]' : 'w-[17%]'
+      }} items-center justify-center border-[0.5px] border-[#D0D5DD] px-3 py-4"
+    >
+      Grade
+    </th>
+    <th
+      class="h-full w-[18%] items-center justify-center border-[0.5px] border-[#D0D5DD] px-3 py-4 {{
+        !editMode ? 'hidden' : 'flex'
+      }}"
+    ></th>
+  </tr>
+  <tr
+    class="order-[0] box-border flex h-14 w-full flex-none flex-grow-0 flex-row items-center p-0"
+    *ngFor="let course of courses; let index = index"
+    [ngClass]="index % 2 === 0 ? 'bg-[#F2F4F7]' : 'bg-white'"
+    [attr.data-course-sn]="course.sn"
+  >
+    <td
+      class="flex h-full {{
+        !editMode ? 'w-[7.89%]' : 'w-[6%]'
+      }} items-center justify-center border-[0.5px] border-[#D0D5DD] px-3 py-4"
+    >
+      {{ course.sn }}
+    </td>
+    <td
+      class="flex h-full {{
+        !editMode ? 'w-[22.05%]' : 'w-[18%]'
+      }}  items-center justify-center border-[0.5px] border-[#D0D5DD] px-3 py-4"
+    >
+      {{ course.courseCode }}
+    </td>
+    <td
+      class="flex h-full {{
+        !editMode ? 'w-[27.95%]' : 'w-[23%]'
+      }} items-center justify-center border-[0.5px] border-[#D0D5DD] px-3 py-4"
+    >
+      {{ course.courseTitle }}
+    </td>
+    <td
+      class="flex h-full {{
+        !editMode ? 'w-[22.05%]' : 'w-[18%]'
+      }} items-center justify-center border-[0.5px] border-[#D0D5DD] px-3 py-4"
+    >
+      {{ course.courseUnit }}
+    </td>
+    <td
+      class="flex h-full {{
+        !editMode ? 'w-[20.87%]' : 'w-[17%]'
+      }} items-center justify-center border-[0.5px] border-[#D0D5DD] px-3 py-4"
+    >
+      {{ course.grade }}
+    </td>
+    <td
+      class="h-full w-[18%] items-center justify-center border-[0.5px] border-[#D0D5DD] px-3 py-4 {{
+        editMode ? 'flex' : 'hidden'
+      }}"
+    >
+      <div
+        class="flex h-full w-full flex-none flex-grow-0 flex-row items-center justify-center gap-2 p-0"
+      >
+        <button
+          class="flex h-6 w-6 flex-none flex-grow-0 items-center justify-center rounded-lg bg-[#F2F4F7] hover:bg-[#E5E7EB] focus:outline-none focus:ring-2 focus:ring-[#667085] focus:ring-opacity-50 active:bg-[#D0D5DD]"
+          (click)="editCourse(course.sn)"
+        >
+          <img
+            src="../../../assets/images/pen-to-square-regular.svg"
+            alt="edit-icon"
+            class="h-4 w-4"
+          />
+        </button>
+      </div>
+    </td>
+  </tr>
+</table>

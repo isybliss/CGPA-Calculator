@@ -1,0 +1,69 @@
+<svg width="121" height="120" viewBox="0 0 121 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_752_28022)">
+<mask id="mask0_752_28022" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="-46" y="-30" width="213" height="161">
+<rect width="212" height="161" transform="translate(-45.5 -30)" fill="url(#paint0_radial_752_28022)"/>
+</mask>
+<g mask="url(#mask0_752_28022)">
+<path d="M-33.5 -25.4V-26.4H-34.5V-25.4H-33.5ZM6.5 -25.4H7.5V-26.4H6.5V-25.4ZM6.5 14.6V15.6H7.5V14.6H6.5ZM-33.5 14.6H-34.5V15.6H-33.5V14.6ZM-33.5 -24.4H6.5V-26.4H-33.5V-24.4ZM5.5 -25.4V14.6H7.5V-25.4H5.5ZM6.5 13.6H-33.5V15.6H6.5V13.6ZM-32.5 14.6V-25.4H-34.5V14.6H-32.5Z" fill="#C2D5FE" mask="url(#path-1-inside-1_752_28022)"/>
+<path d="M46.5 -25.4H47.5V-26.4H46.5V-25.4ZM46.5 14.6V15.6H47.5V14.6H46.5ZM6.5 -24.4H46.5V-26.4H6.5V-24.4ZM45.5 -25.4V14.6H47.5V-25.4H45.5ZM46.5 13.6H6.5V15.6H46.5V13.6Z" fill="#C2D5FE" mask="url(#path-3-inside-2_752_28022)"/>
+<mask id="path-5-inside-3_752_28022" fill="white">
+<path d="M46.5 -25.4H86.5V14.6H46.5V-25.4Z"/>
+</mask>
+<path d="M46.5 -25.4H86.5V14.6H46.5V-25.4Z" fill="#E1E7F7"/>
+<path d="M86.5 -25.4H87.5V-26.4H86.5V-25.4ZM86.5 14.6V15.6H87.5V14.6H86.5ZM46.5 -24.4H86.5V-26.4H46.5V-24.4ZM85.5 -25.4V14.6H87.5V-25.4H85.5ZM86.5 13.6H46.5V15.6H86.5V13.6Z" fill="#C2D5FE" mask="url(#path-5-inside-3_752_28022)"/>
+<path d="M126.5 -25.4H127.5V-26.4H126.5V-25.4ZM126.5 14.6V15.6H127.5V14.6H126.5ZM86.5 -24.4H126.5V-26.4H86.5V-24.4ZM125.5 -25.4V14.6H127.5V-25.4H125.5ZM126.5 13.6H86.5V15.6H126.5V13.6Z" fill="#C2D5FE" mask="url(#path-7-inside-4_752_28022)"/>
+<path d="M6.5 54.6V55.6H7.5V54.6H6.5ZM-33.5 54.6H-34.5V55.6H-33.5V54.6ZM5.5 14.6V54.6H7.5V14.6H5.5ZM6.5 53.6H-33.5V55.6H6.5V53.6ZM-32.5 54.6V14.6H-34.5V54.6H-32.5Z" fill="#C2D5FE" mask="url(#path-9-inside-5_752_28022)"/>
+<path d="M46.5 54.6V55.6H47.5V54.6H46.5ZM45.5 14.6V54.6H47.5V14.6H45.5ZM46.5 53.6H6.5V55.6H46.5V53.6Z" fill="#C2D5FE" mask="url(#path-11-inside-6_752_28022)"/>
+<path d="M86.5 54.6V55.6H87.5V54.6H86.5ZM85.5 14.6V54.6H87.5V14.6H85.5ZM86.5 53.6H46.5V55.6H86.5V53.6Z" fill="#C2D5FE" mask="url(#path-13-inside-7_752_28022)"/>
+<mask id="path-15-inside-8_752_28022" fill="white">
+<path d="M86.5 14.6H126.5V54.6H86.5V14.6Z"/>
+</mask>
+<path d="M86.5 14.6H126.5V54.6H86.5V14.6Z" fill="#C2D5FE" fill-opacity="0.3"/>
+<path d="M126.5 54.6V55.6H127.5V54.6H126.5ZM125.5 14.6V54.6H127.5V14.6H125.5ZM126.5 53.6H86.5V55.6H126.5V53.6Z" fill="#C2D5FE" mask="url(#path-15-inside-8_752_28022)"/>
+<path d="M6.5 94.6V95.6H7.5V94.6H6.5ZM-33.5 94.6H-34.5V95.6H-33.5V94.6ZM5.5 54.6V94.6H7.5V54.6H5.5ZM6.5 93.6H-33.5V95.6H6.5V93.6ZM-32.5 94.6V54.6H-34.5V94.6H-32.5Z" fill="#C2D5FE" mask="url(#path-17-inside-9_752_28022)"/>
+<mask id="path-19-inside-10_752_28022" fill="white">
+<path d="M6.5 54.6H46.5V94.6H6.5V54.6Z"/>
+</mask>
+<path d="M6.5 54.6H46.5V94.6H6.5V54.6Z" fill="#C2D5FE" fill-opacity="0.3"/>
+<path d="M46.5 94.6V95.6H47.5V94.6H46.5ZM45.5 54.6V94.6H47.5V54.6H45.5ZM46.5 93.6H6.5V95.6H46.5V93.6Z" fill="#C2D5FE" mask="url(#path-19-inside-10_752_28022)"/>
+<path d="M86.5 94.6V95.6H87.5V94.6H86.5ZM85.5 54.6V94.6H87.5V54.6H85.5ZM86.5 93.6H46.5V95.6H86.5V93.6Z" fill="#C2D5FE" mask="url(#path-21-inside-11_752_28022)"/>
+<path d="M126.5 94.6V95.6H127.5V94.6H126.5ZM125.5 54.6V94.6H127.5V54.6H125.5ZM126.5 93.6H86.5V95.6H126.5V93.6Z" fill="#C2D5FE" mask="url(#path-23-inside-12_752_28022)"/>
+<path d="M6.5 134.6V135.6H7.5V134.6H6.5ZM-33.5 134.6H-34.5V135.6H-33.5V134.6ZM5.5 94.6V134.6H7.5V94.6H5.5ZM6.5 133.6H-33.5V135.6H6.5V133.6ZM-32.5 134.6V94.6H-34.5V134.6H-32.5Z" fill="#C2D5FE" mask="url(#path-25-inside-13_752_28022)"/>
+<path d="M46.5 134.6V135.6H47.5V134.6H46.5ZM45.5 94.6V134.6H47.5V94.6H45.5ZM46.5 133.6H6.5V135.6H46.5V133.6Z" fill="#C2D5FE" mask="url(#path-27-inside-14_752_28022)"/>
+<mask id="path-29-inside-15_752_28022" fill="white">
+<path d="M46.5 94.6H86.5V134.6H46.5V94.6Z"/>
+</mask>
+<path d="M46.5 94.6H86.5V134.6H46.5V94.6Z" fill="#E1E7F7"/>
+<path d="M86.5 134.6V135.6H87.5V134.6H86.5ZM85.5 94.6V134.6H87.5V94.6H85.5ZM86.5 133.6H46.5V135.6H86.5V133.6Z" fill="#C2D5FE" mask="url(#path-29-inside-15_752_28022)"/>
+<path d="M126.5 134.6V135.6H127.5V134.6H126.5ZM125.5 94.6V134.6H127.5V94.6H125.5ZM126.5 133.6H86.5V135.6H126.5V133.6Z" fill="#C2D5FE" mask="url(#path-31-inside-16_752_28022)"/>
+</g>
+<g filter="url(#filter0_d_752_28022)">
+<rect x="28.5" y="18" width="64" height="64" rx="32" fill="white"/>
+<path d="M76.6667 57.9V37.7833C76.6667 35.7833 75.0334 34.3 73.05 34.4667H72.95C69.45 34.7667 64.1334 36.55 61.1667 38.4167L60.8834 38.6C60.4 38.9 59.6 38.9 59.1167 38.6L58.7 38.35C55.7334 36.5 50.4334 34.7333 46.9334 34.45C44.95 34.2833 43.3334 35.7833 43.3334 37.7667V57.9C43.3334 59.5 44.6334 61 46.2334 61.2L46.7167 61.2667C50.3334 61.75 55.9167 63.5833 59.1167 65.3333L59.1834 65.3667C59.6334 65.6167 60.35 65.6167 60.7834 65.3667C63.9834 63.6 69.5834 61.75 73.2167 61.2667L73.7667 61.2C75.3667 61 76.6667 59.5 76.6667 57.9Z" fill="#E6EEFF" stroke="#002F90" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M60 39.15V64.15" stroke="#002F90" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M52.9167 44.15H49.1667" stroke="#002F90" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M54.1667 49.15H49.1667" stroke="#002F90" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="29" y="18.5" width="63" height="63" rx="31.5" stroke="#BFCAE0"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_752_28022" x="25.5" y="15" width="70" height="70" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="1" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_752_28022"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="1"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.792157 0 0 0 0 0.843137 0 0 0 0 0.909804 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_752_28022"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_752_28022" result="shape"/>
+</filter>
+<radialGradient id="paint0_radial_752_28022" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(106 80.5) rotate(90) scale(80.5 106)">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="clip0_752_28022">
+<rect width="120" height="120" fill="white" transform="translate(0.5)"/>
+</clipPath>
+</defs>
+</svg>

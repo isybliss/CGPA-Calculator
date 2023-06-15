@@ -1,0 +1,129 @@
+<div
+  class="absolute bottom-0 left-0 top-0 z-10 h-screen w-screen bg-[#101828B2]"
+  (click)="closeAddCourseForm()"
+></div>
+<div
+  class="absolute left-[calc(50%-(515px/2)-0.5px)] top-[calc(50%-(540px/2))] isolate z-10 box-border flex h-[500px] w-[515px] flex-col items-center gap-6 rounded-2xl border border-[#D0D5DD] bg-[#FFFFFF] p-10 drop-shadow-add-course-form-shadow"
+>
+  <div
+    class="z-0 order-[0] flex h-[96px] w-[153px] flex-none flex-grow-0 flex-col items-center gap-4 p-0"
+  >
+    <img
+      src="../../assets/images/book.svg"
+      alt="book"
+      class="order-[0] h-10 w-10 flex-none flex-grow-0"
+    />
+    <div
+      class="order-1 flex h-[38px] w-[153px] flex-none flex-grow-0 flex-col items-center gap-8 p-0"
+    >
+      <p
+        class="order-[0] flex-none flex-grow-0 font-kanit text-3xl font-medium leading-[38px] text-[#1D2939]"
+      >
+        Add course
+      </p>
+    </div>
+  </div>
+  <form
+    [formGroup]="addCourseForm"
+    class="z-0 order-1 flex h-[342px] w-[435px] flex-none flex-grow-0 flex-col items-center gap-10 p-0"
+  >
+    <div
+      class="order-[0] flex h-[258px] w-[435px] flex-none flex-grow-0 flex-col items-start gap-6 p-0"
+    >
+      <div class="form-group input-group order-[0]">
+        <div class="input-group-inner">
+          <label for="course-title" class="input-label">Course title</label>
+          <input
+            type="text"
+            id="course-title"
+            class="form-control form-input"
+            formControlName="courseTitle"
+            placeholder="Welding and fabrication"
+          />
+        </div>
+      </div>
+      <div
+        class="order-1 flex h-[70px] w-[434px] flex-none flex-grow-0 flex-row items-start gap-4 p-0"
+      >
+        <div class="form-group input-group order-[0] w-[calc(50%-6px)]">
+          <div class="input-group-inner w-full">
+            <label for="course-code" class="input-label">Course code</label>
+            <input
+              type="text"
+              id="course-code"
+              class="form-control form-input w-full"
+              formControlName="courseCode"
+              placeholder="CGPA"
+            />
+          </div>
+        </div>
+        <div class="form-group input-group order-1 w-[calc(50%-6px)]">
+          <div class="input-group-inner relative w-full">
+            <label for="course-unit" class="input-label">Course unit</label>
+            <select
+              name="course-unit"
+              id="course-unit"
+              formControlName="courseUnit"
+              class="order-1 box-border flex h-11 w-full flex-none flex-grow-0 appearance-none flex-row items-start self-stretch rounded-lg border border-[#D0D5DD] bg-[#FFFFFF] p-0 py-[7px] pl-[14px] font-inter text-base font-normal leading-6 text-[#667085] drop-shadow-input-shadow"
+            >
+              <option value="1" class="" selected>1</option>
+              <option value="2" class="">2</option>
+              <option value="3" class="">3</option>
+              <option value="4" class="">4</option>
+              <option value="5" class="">5</option>
+              <option value="6" class="">6</option>
+            </select>
+            <img
+              src="../../assets/images/arrow-down.svg"
+              alt="arrow down :)"
+              class="absolute right-4 top-1/2 order-[0] h-6 w-6 flex-none flex-grow-0 -translate-y-[calc(40%)]"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="form-group input-group order-2">
+        <div class="input-group-inner relative">
+          <label for="grade" class="input-label">Grade</label>
+          <select
+            name="grade"
+            id="grade"
+            formControlName="grade"
+            class="order-1 box-border flex h-11 w-[435px] flex-none flex-grow-0 appearance-none flex-row items-start self-stretch rounded-lg border border-[#D0D5DD] bg-[#FFFFFF] p-0 py-[10px] pl-[14px] font-inter text-base font-normal leading-6 text-[#667085] drop-shadow-input-shadow"
+          >
+            <option value="A" class="" selected>A</option>
+            <option value="B" class="">B</option>
+            <option value="C" class="">C</option>
+            <option value="D" class="">D</option>
+            <option value="E" class="">E</option>
+            <option value="F" class="">F</option>
+          </select>
+          <img
+            src="../../assets/images/arrow-down.svg"
+            alt="arrow down :)"
+            class="absolute right-4 top-1/2 order-[0] h-6 w-6 flex-none flex-grow-0 -translate-y-[calc(40%)]"
+          />
+        </div>
+      </div>
+    </div>
+    <button
+      class="order-1 flex h-11 w-[435px] flex-none flex-grow-0 flex-row items-start rounded-lg p-0"
+    >
+      <div
+        class="order-[0] box-border flex h-11 w-[435px] flex-none flex-grow-0 flex-row items-center justify-center gap-2 rounded-lg border border-[#0052FC] bg-[#0052FC] px-[18px] py-[10px] drop-shadow-input-shadow"
+      >
+        <p
+          class="order-[0] flex-none flex-grow-0 font-inter text-base font-semibold leading-6 text-[#FFFFFF]"
+          (click)="onSubmit()"
+        >
+          Add course
+        </p>
+      </div>
+    </button>
+  </form>
+  <div
+    class="absolute left-[451px] top-10 z-0 order-2 h-6 w-6 flex-none flex-grow-0"
+    (click)="closeAddCourseForm()"
+  >
+    <img src="../../assets/images/close-circle.svg" alt="close" />
+  </div>
+</div>

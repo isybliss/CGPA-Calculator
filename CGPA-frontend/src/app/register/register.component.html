@@ -1,0 +1,256 @@
+<div
+  class="relative h-[1024px] w-[100%] overflow-hidden overflow-y-scroll bg-[#EEEFF4]"
+>
+  <div
+    class="absolute left-[calc(50%-525px/2-0.5px)] top-[calc(50%-896px/2)] box-border flex max-h-[896px] w-[525px] flex-col items-center gap-10 rounded-2xl bg-white p-[40px] drop-shadow-form-shadow"
+  >
+    <div
+      class="order-[0] flex h-[156px] w-[445px] flex-none flex-grow-0 flex-col items-center gap-4 p-0"
+    >
+      <img class="h-[46px]" src="../../assets/images/logo.svg" alt="logo" />
+      <div
+        class="order-1 flex h-[94px] w-[445px] flex-none flex-grow-0 flex-col items-center gap-2 p-0"
+      >
+        <p
+          class="order-[0] mt-4 h-10 flex-none flex-grow-0 font-kanit text-3xl font-medium leading-8 text-[#1D2939]"
+        >
+          Welcome to CGPA Calculator
+        </p>
+        <p
+          class="order-1 w-[445px] flex-none flex-grow-0 px-8 text-center font-inter text-base text-[#475467]"
+        >
+          Sign in to Calculate your academic standing and monitor your academic
+          journey
+        </p>
+      </div>
+    </div>
+    <form
+      [formGroup]="registerForm"
+      class="order-1 flex h-[488px] w-[435px] flex-none flex-grow-0 flex-col items-center gap-10 p-0"
+    >
+      <div
+        class="form-group order-[0] flex h-[404px] w-[435px] flex-none flex-grow-0 flex-col items-start gap-6 p-0"
+      >
+        <div class="form-group input-group order-[0]">
+          <div class="input-group-inner relative">
+            <label for="email" class="input-label">Email</label>
+            <div class="input-field-wrapper relative">
+              <input
+                type="email"
+                id="email"
+                class="form-control form-input"
+                formControlName="email"
+                placeholder="CGPACalculator@email.com"
+              />
+              <img
+                *ngIf="
+                  registerForm.get('email')?.invalid &&
+                  registerForm.get('email')?.touched
+                "
+                class="absolute right-[10px] top-1/2 h-[20px] w-[20px] -translate-y-1/2 transform"
+                src="../../assets/images/exclamation-circle-icon.svg"
+                alt="warning"
+              />
+            </div>
+            <div
+              *ngIf="
+                registerForm.get('email')?.invalid &&
+                registerForm.get('email')?.touched
+              "
+              class=""
+            >
+              <div class="invalid-feedback">
+                <p class="tooltip-text">Please enter a valid email address</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="order-1 flex h-[70px] w-[434px] flex-none flex-grow-0 flex-row items-start gap-4 p-0"
+        >
+          <div class="form-group input-group w-[209px]">
+            <div class="input-group-inner w-[209px]">
+              <label for="firstname" class="input-label">First Name</label>
+              <div class="input-wrapper relative">
+                <input
+                  type="text"
+                  id="firstname"
+                  class="form-control form-input w-[209px]"
+                  formControlName="firstname"
+                  placeholder="CGPA"
+                />
+                <img
+                  *ngIf="
+                    registerForm.get('firstname')?.invalid &&
+                    registerForm.get('firstname')?.touched
+                  "
+                  class="absolute right-[10px] top-1/2 h-[20px] w-[20px] -translate-y-1/2 transform"
+                  src="../../assets/images/exclamation-circle-icon.svg"
+                  alt="warning"
+                />
+              </div>
+              <div
+                *ngIf="
+                  registerForm.get('firstname')?.invalid &&
+                  registerForm.get('firstname')?.touched
+                "
+                class=""
+              >
+                <div class="invalid-feedback">
+                  <p class="tooltip-text">Please enter a valid first name</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group input-group w-[209px]">
+            <div class="input-group-inner w-[209px]">
+              <label for="lastname" class="input-label">Last Name</label>
+              <div class="input-wrapper relative">
+                <input
+                  type="text"
+                  id="lastname"
+                  class="form-control form-input w-[209px]"
+                  formControlName="lastname"
+                  placeholder="Calculator"
+                />
+                <img
+                  *ngIf="
+                    registerForm.get('lastname')?.invalid &&
+                    registerForm.get('lastname')?.touched
+                  "
+                  class="absolute right-[10px] top-1/2 h-[20px] w-[20px] -translate-y-1/2 transform"
+                  src="../../assets/images/exclamation-circle-icon.svg"
+                  alt="warning"
+                />
+              </div>
+              <div
+                *ngIf="
+                  registerForm.get('lastname')?.invalid &&
+                  registerForm.get('lastname')?.touched
+                "
+                class=""
+              >
+                <div class="invalid-feedback">
+                  <p class="tooltip-text">Please enter a valid last name</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group input-group order-2">
+          <div class="input-group-inner">
+            <label for="password" class="input-label">Password</label>
+            <div class="input-field-wrapper relative">
+              <input
+                type="password"
+                id="password"
+                class="form-control form-input"
+                placeholder="******"
+                formControlName="password"
+              />
+              <img
+                *ngIf="
+                  registerForm.get('password')?.invalid &&
+                  registerForm.get('password')?.touched
+                "
+                class="absolute right-[10px] top-1/2 h-[20px] w-[20px] -translate-y-1/2 transform"
+                src="../../assets/images/exclamation-circle-icon.svg"
+                alt="warning"
+              />
+            </div>
+            <div
+              *ngIf="
+                registerForm.get('password')?.invalid &&
+                registerForm.get('password')?.touched
+              "
+              class=""
+            >
+              <div class="invalid-feedback">
+                <p class="tooltip-text">Please enter a valid password</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group input-group order-3">
+          <div class="input-group-inner">
+            <label for="confirmPassword" class="input-label"
+              >Confirm Password</label
+            >
+            <div class="input-field-wrapper relative">
+              <input
+                type="password"
+                id="confirmPassword"
+                class="form-control form-input"
+                placeholder="******"
+                formControlName="confirmPassword"
+              />
+              <img
+                *ngIf="
+                  registerForm.get('confirmPassword')?.touched &&
+                  (registerForm.get('confirmPassword')?.invalid ||
+                    registerForm.get('confirmPassword')?.value !=
+                      registerForm.get('password')?.value)
+                "
+                class="absolute right-[10px] top-1/2 h-[20px] w-[20px] -translate-y-1/2 transform"
+                src="../../assets/images/exclamation-circle-icon.svg"
+                alt="warning"
+              />
+            </div>
+            <div
+              *ngIf="
+                registerForm.get('confirmPassword')?.invalid &&
+                registerForm.get('confirmPassword')?.touched &&
+                registerForm.get('confirmPassword')?.value ==
+                  registerForm.get('password')?.value
+              "
+              class=""
+            >
+              <div class="invalid-feedback">
+                <p class="tooltip-text">Please enter a valid password</p>
+              </div>
+            </div>
+            <div
+              *ngIf="
+                registerForm.get('confirmPassword')?.value !=
+                  registerForm.get('password')?.value &&
+                registerForm.get('confirmPassword')?.touched
+              "
+              class=""
+            >
+              <div class="invalid-feedback">
+                <p class="tooltip-text">Password does not match</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="login-btn" (click)="register()">
+        <div class="login-btn-inner">
+          <p
+            class="order-[0] h-6 w-12 flex-none flex-grow-0 font-inter text-base font-semibold leading-6 text-white"
+          >
+            Register
+          </p>
+        </div>
+      </button>
+    </form>
+    <div
+      class="order-last flex h-[92px] w-[435px] flex-none flex-grow-0 flex-col items-center gap-6 p-0"
+    >
+      <p
+        class="order-0 h-6 flex-none flex-grow-0 font-inter text-base font-medium leading-6 text-[#667085]"
+      >
+        Already have an account ?
+      </p>
+      <div class="register-btn">
+        <a routerLink="/login" class="register-btn-inner">
+          <p
+            class="order-[0] h-6 w-[65px] flex-none flex-grow-0 text-center font-inter text-base font-semibold leading-6 text-[#344054]"
+          >
+            Log In
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
