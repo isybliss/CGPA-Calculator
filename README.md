@@ -40,7 +40,7 @@ The CGPA Calculator is a web application built using Python and Flask framework 
 [ALX_Cgpa-Calculator-backend](https://github.com/DT-GAMER/ALX_Cgpa-Calculator-backend)
 
 ## LANDING PAGE
-[alx_Cgpa-Calculator-landing_page](https://github.com/isybliss/portfolio-landing-page)
+[alx_Cgpa-Calculator-landing_page](https://isybliss.github.io/portfolio-landing-page/)
 
 ## File Structure
 
