@@ -87,7 +87,7 @@ This project is licensed under the [MIT License](LICENSE). You are free to use, 
 
 - [Flask](https://flask.palletsprojects.com/): The web framework used in this project.
 
-- [SQLite](https://www.sqlite.org/): The embedded database management system.
+- [mongoDB](https://www.mongodb.com/cloud/atlas/lp/try4?utm_source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_emea-ng_ps-all_mobile_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=12564981047&adgroup=116332193941&cq_cmp=12564981047&gad=1&gclid=CjwKCAjwkLCkBhA9EiwAka9QRuvLaT1BD6-Cxsph1pag9YrVlvfZI2UEaNc6RIeZL3frzJWBndufBBoCCN4QAvD_BwE): The embedded database management system.
 
 - [Chart.js](https://www.chartjs.org/): A JavaScript library for creating interactive charts.
 
